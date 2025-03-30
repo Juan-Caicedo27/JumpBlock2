@@ -1,4 +1,53 @@
-body { text-align: center; font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        canvas { background: #1fcf37; display: block; margin: 0 auto; }
-        button { margin-top: 10px; padding: 10px; font-size: 16px; }
-        #userForm { margin-bottom: 20px; }
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  background: #1fcf37;
+  display: block;
+  margin: 0 auto;
+  width: 90%; /* Ajusta el tamaño para pantallas pequeñas */
+  max-width: 600px; /* Limita el tamaño máximo */
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#userForm {
+  margin-bottom: 20px;
+}
+
+/* Media Query para dispositivos más pequeños */
+@media (max-width: 768px) {
+  button {
+    width: 100%; /* Botón ocupa todo el ancho en pantallas pequeñas */
+    font-size: 14px; /* Reduce el tamaño de fuente */
+    padding: 8px;
+  }
+
+  canvas {
+    width: 100%; /* Asegúrate de que el lienzo sea completamente fluido */
+  }
+
+  #userForm {
+    padding: 0 10px; /* Agrega algo de espacio alrededor del formulario */
+  }
+}
+
+/* Media Query para dispositivos ultra pequeños (como móviles) */
+@media (max-width: 480px) {
+  button {
+    font-size: 12px; /* Ajusta aún más el tamaño de fuente */
+    padding: 6px;
+  }
+
+  canvas {
+    width: 100%; /* Asegúrate de que el lienzo sea completamente fluido */
+  }
+}

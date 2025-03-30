@@ -1,0 +1,26 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JumpBlock</title>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <h1>JumpBlock</h1>
+    <div id="userForm">
+        <input type="text" id="name" placeholder="Nombre" required>
+        <input type="text" id="cedula" placeholder="Cédula" required>
+        <button onclick="startGame()">Comenzar</button>
+    </div>
+    <canvas id="gameCanvas" style="display:none;"></canvas>
+    <button id="jumpButton" onclick="jump()" style="display:none;">Saltar</button>
+    <button id="restartButton" onclick="restartGame()" style="display:none;">Reiniciar</button>
+    <p id="scoreText" style="display:none;">Puntuación: <span id="score">0</span></p>
+    
+    <script src="script.js"> </script>
+</body>
+</html>
